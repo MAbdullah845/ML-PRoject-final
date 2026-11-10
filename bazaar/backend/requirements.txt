@@ -1,0 +1,22 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+pandas
+numpy
+scikit-learn
+sqlalchemy
+asyncpg
+# psycopg2-binary is optional -- only needed if you actually run Postgres.
+# The app works fully without a database. Uncomment if you set one up.
+# psycopg2-binary==2.9.9
+python-dotenv
+httpx
+pytest
+python-jose[cryptography]
+passlib[bcrypt]
+websockets
+aiofiles
+pypsx
+pypsx-toolkit
+loguru

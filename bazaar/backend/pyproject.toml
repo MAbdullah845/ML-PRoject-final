@@ -1,0 +1,33 @@
+[project]
+name = "bazaar-psx-backend"
+version = "1.0.0"
+description = "Bazaar PSX Terminal Backend API"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "pydantic==2.5.2",
+    "pandas==2.1.4",
+    "numpy==1.26.3",
+    "sqlalchemy==2.0.23",
+    "psycopg2-binary==2.9.9",
+    "python-dotenv==1.0.0",
+    "httpx==0.25.2",
+    "pytest==7.4.4",
+    "python-jose[cryptography]==3.3.0",
+    "passlib[bcrypt]==1.7.4",
+    "websockets==12.0",
+    "aiofiles==23.2.1",
+    "pypsx==2.5.2",
+    "pypsx-toolkit==3.1.1",
+    "loguru==0.7.3",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["app/tests"]
+norecursedirs = [".venv", "node_modules", "frontend"]
